@@ -6,3 +6,4 @@ storybook-static
 .vite
 .turbo
 coverage
+graphify-out
