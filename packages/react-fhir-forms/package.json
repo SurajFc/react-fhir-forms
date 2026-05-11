@@ -1,6 +1,6 @@
 {
   "name": "react-fhir-forms",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Render FHIR R4 Questionnaires as React forms. ~3.7 KB headless core + opt-in Tailwind and shadcn/ui recipes. Bring your own UI or use the recipes — same Questionnaire in, same QuestionnaireResponse out.",
   "keywords": [
     "fhir",
@@ -93,10 +93,18 @@
     "react-dom": ">=18"
   },
   "peerDependenciesMeta": {
-    "@radix-ui/react-checkbox": { "optional": true },
-    "@radix-ui/react-label": { "optional": true },
-    "@radix-ui/react-radio-group": { "optional": true },
-    "@radix-ui/react-select": { "optional": true }
+    "@radix-ui/react-checkbox": {
+      "optional": true
+    },
+    "@radix-ui/react-label": {
+      "optional": true
+    },
+    "@radix-ui/react-radio-group": {
+      "optional": true
+    },
+    "@radix-ui/react-select": {
+      "optional": true
+    }
   },
   "devDependencies": {
     "@radix-ui/react-checkbox": "^1.1.2",
