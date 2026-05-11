@@ -1,8 +1,33 @@
 {
   "name": "react-fhir-forms",
   "version": "0.0.1",
-  "description": "Render FHIR R4 Questionnaires as React forms — tiny headless core + opt-in Tailwind/shadcn recipes.",
+  "description": "Render FHIR R4 Questionnaires as React forms. ~3.7 KB headless core + opt-in Tailwind and shadcn/ui recipes. Bring your own UI or use the recipes — same Questionnaire in, same QuestionnaireResponse out.",
+  "keywords": [
+    "fhir",
+    "fhir-r4",
+    "questionnaire",
+    "questionnaire-response",
+    "react",
+    "forms",
+    "headless",
+    "tailwind",
+    "shadcn",
+    "shadcn-ui",
+    "radix-ui",
+    "healthcare",
+    "ehr"
+  ],
   "license": "MIT",
+  "author": "Suraj <suraj@wellpro.ai> (https://github.com/SurajFc)",
+  "homepage": "https://surajfc.github.io/react-fhir-forms/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SurajFc/react-fhir-forms.git",
+    "directory": "packages/react-fhir-forms"
+  },
+  "bugs": {
+    "url": "https://github.com/SurajFc/react-fhir-forms/issues"
+  },
   "type": "module",
   "main": "./src/index.ts",
   "types": "./src/index.ts",
@@ -44,7 +69,8 @@
   },
   "files": [
     "dist",
-    "src"
+    "LICENSE",
+    "README.md"
   ],
   "scripts": {
     "build": "tsup",

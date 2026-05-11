@@ -2,6 +2,12 @@
   "name": "react-fhir-forms-monorepo",
   "private": false,
   "version": "0.0.0",
+  "description": "Monorepo for react-fhir-forms — headless React renderer for FHIR R4 Questionnaires, with Tailwind and shadcn/ui recipes. Demo + Storybook deployed via GitHub Pages.",
+  "homepage": "https://surajfc.github.io/react-fhir-forms/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SurajFc/react-fhir-forms.git"
+  },
   "packageManager": "pnpm@9.15.9",
   "scripts": {
     "dev": "pnpm --filter demo dev",
