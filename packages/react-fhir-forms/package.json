@@ -1,0 +1,91 @@
+{
+  "name": "react-fhir-forms",
+  "version": "0.0.1",
+  "description": "Render FHIR R4 Questionnaires as React forms — tiny headless core + opt-in Tailwind/shadcn recipes.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    },
+    "./tailwind": {
+      "types": "./src/tailwind/index.ts",
+      "default": "./src/tailwind/index.ts"
+    },
+    "./shadcn": {
+      "types": "./src/shadcn/index.ts",
+      "default": "./src/shadcn/index.ts"
+    }
+  },
+  "publishConfig": {
+    "main": "./dist/index.cjs",
+    "module": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "exports": {
+      ".": {
+        "types": "./dist/index.d.ts",
+        "import": "./dist/index.js",
+        "require": "./dist/index.cjs"
+      },
+      "./tailwind": {
+        "types": "./dist/tailwind/index.d.ts",
+        "import": "./dist/tailwind/index.js",
+        "require": "./dist/tailwind/index.cjs"
+      },
+      "./shadcn": {
+        "types": "./dist/shadcn/index.d.ts",
+        "import": "./dist/shadcn/index.js",
+        "require": "./dist/shadcn/index.cjs"
+      }
+    }
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "pnpm build && pnpm test"
+  },
+  "dependencies": {
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.5.4"
+  },
+  "peerDependencies": {
+    "@radix-ui/react-checkbox": ">=1",
+    "@radix-ui/react-label": ">=2",
+    "@radix-ui/react-radio-group": ">=1",
+    "@radix-ui/react-select": ">=2",
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "peerDependenciesMeta": {
+    "@radix-ui/react-checkbox": { "optional": true },
+    "@radix-ui/react-label": { "optional": true },
+    "@radix-ui/react-radio-group": { "optional": true },
+    "@radix-ui/react-select": { "optional": true }
+  },
+  "devDependencies": {
+    "@radix-ui/react-checkbox": "^1.1.2",
+    "@radix-ui/react-label": "^2.1.0",
+    "@radix-ui/react-radio-group": "^1.2.1",
+    "@radix-ui/react-select": "^2.1.2",
+    "@testing-library/react": "^16.0.1",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "jsdom": "^25.0.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tsup": "^8.3.5",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.5"
+  }
+}

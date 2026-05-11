@@ -1,0 +1,14 @@
+{
+  "name": "react-fhir-forms-monorepo",
+  "private": true,
+  "version": "0.0.0",
+  "packageManager": "pnpm@9.15.9",
+  "scripts": {
+    "dev": "pnpm --filter demo dev",
+    "storybook": "pnpm --filter storybook-app storybook",
+    "build": "pnpm -r build",
+    "build:storybook": "pnpm --filter storybook-app build-storybook",
+    "test": "pnpm -r test",
+    "typecheck": "pnpm -r typecheck"
+  }
+}
