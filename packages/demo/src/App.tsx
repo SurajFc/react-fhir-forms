@@ -34,6 +34,13 @@ export function App() {
             </h1>
             <p className="text-xs text-slate-500">
               Headless core + opt-in Tailwind, shadcn, or fully-custom recipes.
+              {' · '}
+              <a
+                href={`${import.meta.env.BASE_URL}storybook/`}
+                className="text-indigo-600 underline-offset-2 hover:underline"
+              >
+                View Storybook →
+              </a>
             </p>
           </div>
           <div className="flex flex-wrap items-center gap-4 text-sm">

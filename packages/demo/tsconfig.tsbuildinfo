@@ -1,1 +1,1 @@
-{"root":["./src/app.tsx","./src/headlesscustomform.tsx","./src/main.tsx","./src/questionnaires/intake.ts","./src/questionnaires/phq9.ts","./vite.config.ts"],"version":"5.9.3"}
+{"root":["./src/app.tsx","./src/headlesscustomform.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/questionnaires/intake.ts","./src/questionnaires/phq9.ts","./vite.config.ts"],"version":"5.9.3"}
